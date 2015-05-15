@@ -1,0 +1,8 @@
+object Form3: TForm3
+  Left = 696
+  Height = 470
+  Top = 224
+  Width = 511
+  Caption = 'Деканат'
+  LCLVersion = '1.0.14.0'
+end
