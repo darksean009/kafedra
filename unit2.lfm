@@ -1,0 +1,818 @@
+object Form2: TForm2
+  Left = -96
+  Height = 687
+  Top = 22
+  Width = 1298
+  HorzScrollBar.Page = 1323
+  HorzScrollBar.Range = 1272
+  VertScrollBar.Page = 687
+  VertScrollBar.Range = 950
+  Caption = 'Отдел кадров'
+  ClientHeight = 687
+  ClientWidth = 1281
+  LCLVersion = '1.0.14.0'
+  object GroupBox2: TGroupBox
+    Left = 544
+    Height = 400
+    Top = 16
+    Width = 728
+    Caption = 'Информация о должностях'
+    ClientHeight = 382
+    ClientWidth = 724
+    TabOrder = 14
+    object DBNavigator3: TDBNavigator
+      Left = 232
+      Height = 25
+      Top = 232
+      Width = 241
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 241
+      DataSource = DataSource3
+      Options = []
+      TabOrder = 0
+    end
+    object DBEdit8: TDBEdit
+      Left = 102
+      Height = 23
+      Top = 24
+      Width = 80
+      DataField = 'Name'
+      DataSource = DataSource3
+      CharCase = ecNormal
+      MaxLength = 45
+      TabOrder = 1
+    end
+    object DBEdit9: TDBEdit
+      Left = 102
+      Height = 23
+      Top = 64
+      Width = 80
+      DataField = 'Payment'
+      DataSource = DataSource3
+      CharCase = ecNormal
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object Button3: TButton
+      Left = 22
+      Height = 25
+      Top = 104
+      Width = 175
+      AutoSize = True
+      Caption = 'Добавить/изменить запись'
+      OnClick = Button3Click
+      TabOrder = 3
+    end
+    object GroupBox6: TGroupBox
+      Left = 16
+      Height = 146
+      Top = 152
+      Width = 192
+      Caption = 'Поиск по должности'
+      ClientHeight = 128
+      ClientWidth = 188
+      TabOrder = 4
+      object Edit3: TEdit
+        Left = 22
+        Height = 23
+        Top = 24
+        Width = 80
+        TabOrder = 0
+      end
+      object Button9: TButton
+        Left = 22
+        Height = 25
+        Top = 72
+        Width = 75
+        Caption = 'Поиск'
+        OnClick = Button9Click
+        TabOrder = 1
+      end
+    end
+    object Button10: TButton
+      Left = 512
+      Height = 25
+      Top = 14
+      Width = 138
+      AutoSize = True
+      Caption = 'Показать все записи'
+      OnClick = Button10Click
+      TabOrder = 5
+    end
+    object Label8: TLabel
+      Left = 32
+      Height = 16
+      Top = 24
+      Width = 63
+      Caption = 'Должность'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 32
+      Height = 16
+      Top = 64
+      Width = 41
+      Caption = 'Оплата'
+      ParentColor = False
+    end
+  end
+  object DBGroupBox1: TDBGroupBox
+    Left = 16
+    Height = 688
+    Top = 16
+    Width = 520
+    Caption = 'Полная информация о сотрудниках'
+    ClientHeight = 670
+    ClientWidth = 516
+    TabOrder = 7
+    object Button1: TButton
+      Left = 24
+      Height = 25
+      Top = 584
+      Width = 175
+      AutoSize = True
+      Caption = 'Добавить/изменить запись'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object GroupBox4: TGroupBox
+      Left = 270
+      Height = 129
+      Top = 264
+      Width = 193
+      Caption = 'Поиск по фамилии'
+      TabOrder = 3
+    end
+    object Edit1: TEdit
+      Left = 288
+      Height = 23
+      Top = 304
+      Width = 144
+      TabOrder = 1
+    end
+    object Button5: TButton
+      Left = 288
+      Height = 25
+      Top = 352
+      Width = 75
+      Caption = 'Поиск'
+      OnClick = Button5Click
+      TabOrder = 2
+    end
+    object Button6: TButton
+      Left = 270
+      Height = 25
+      Top = 584
+      Width = 138
+      AutoSize = True
+      Caption = 'Показать все записи'
+      OnClick = Button6Click
+      TabOrder = 4
+    end
+    object Label1: TLabel
+      Left = 24
+      Height = 16
+      Top = 288
+      Width = 52
+      Caption = 'Фамилия'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 24
+      Height = 16
+      Top = 344
+      Width = 25
+      Caption = 'Имя'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 24
+      Height = 16
+      Top = 392
+      Width = 52
+      Caption = 'Отчество'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 24
+      Height = 16
+      Top = 440
+      Width = 86
+      Caption = 'Ученая степень'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 24
+      Height = 16
+      Top = 496
+      Width = 63
+      Caption = 'Должность'
+      ParentColor = False
+    end
+  end
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 230
+    Top = 720
+    Width = 817
+    Caption = 'Информация о ученых степенях'
+    ClientHeight = 212
+    ClientWidth = 813
+    TabOrder = 12
+    object Button2: TButton
+      Left = 288
+      Height = 25
+      Top = 128
+      Width = 175
+      AutoSize = True
+      Caption = 'Добавить/изменить запись'
+      OnClick = Button2Click
+      TabOrder = 0
+    end
+    object GroupBox5: TGroupBox
+      Left = 534
+      Height = 144
+      Top = 9
+      Width = 248
+      Caption = 'Поиск по ученой степени'
+      ClientHeight = 126
+      ClientWidth = 244
+      TabOrder = 1
+      object Edit2: TEdit
+        Left = 30
+        Height = 23
+        Top = 24
+        Width = 80
+        TabOrder = 0
+        Text = 'Edit2'
+      end
+      object Button7: TButton
+        Left = 30
+        Height = 25
+        Top = 64
+        Width = 75
+        Caption = 'Поиск'
+        OnClick = Button7Click
+        TabOrder = 1
+      end
+    end
+    object Button8: TButton
+      Left = 534
+      Height = 25
+      Top = 176
+      Width = 138
+      AutoSize = True
+      Caption = 'Показать все записи'
+      OnClick = Button8Click
+      TabOrder = 2
+    end
+    object Label6: TLabel
+      Left = 288
+      Height = 16
+      Top = 56
+      Width = 46
+      Caption = 'Степень'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 288
+      Height = 16
+      Top = 96
+      Width = 41
+      Caption = 'Оплата'
+      ParentColor = False
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 192
+    Top = 32
+    Width = 496
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Width = 30
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Фамилия'
+        Width = 70
+        FieldName = 'Surname'
+      end    
+      item
+        Title.Caption = 'Name'
+        Width = 100
+        FieldName = 'Name'
+      end    
+      item
+        Title.Caption = 'Patronymic'
+        Width = 100
+        FieldName = 'Patronymic'
+      end    
+      item
+        Title.Caption = 'AcademicDegree'
+        Width = 100
+        FieldName = 'AcademicDegree'
+      end    
+      item
+        Title.Caption = 'Post'
+        Width = 50
+        FieldName = 'Post'
+      end>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 24
+    Height = 25
+    Top = 248
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 1
+  end
+  object DBEdit1: TDBEdit
+    Left = 136
+    Height = 23
+    Top = 320
+    Width = 80
+    DataField = 'Surname'
+    DataSource = DataSource1
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 136
+    Height = 23
+    Top = 376
+    Width = 80
+    DataField = 'Name'
+    DataSource = DataSource1
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object DBEdit3: TDBEdit
+    Left = 136
+    Height = 23
+    Top = 424
+    Width = 80
+    DataField = 'Patronymic'
+    DataSource = DataSource1
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 4
+  end
+  object DBEdit4: TDBEdit
+    Left = 136
+    Height = 23
+    Top = 472
+    Width = 80
+    DataField = 'AcademicDegree'
+    DataSource = DataSource1
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 5
+  end
+  object DBEdit5: TDBEdit
+    Left = 136
+    Height = 23
+    Top = 520
+    Width = 80
+    DataField = 'Post'
+    DataSource = DataSource1
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object DBGrid2: TDBGrid
+    Left = 24
+    Height = 192
+    Top = 744
+    Width = 241
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Width = 30
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Name'
+        Width = 100
+        FieldName = 'Name'
+        DisplayFormat = 'Имя'
+      end    
+      item
+        Title.Caption = 'Payment'
+        Width = 70
+        FieldName = 'Payment'
+      end>
+    DataSource = DataSource2
+    TabOrder = 8
+  end
+  object DBNavigator2: TDBNavigator
+    Left = 279
+    Height = 25
+    Top = 752
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DataSource2
+    Options = []
+    TabOrder = 9
+  end
+  object DBEdit6: TDBEdit
+    Left = 384
+    Height = 23
+    Top = 792
+    Width = 80
+    DataField = 'Name'
+    DataSource = DataSource2
+    CharCase = ecNormal
+    MaxLength = 45
+    TabOrder = 10
+  end
+  object DBEdit7: TDBEdit
+    Left = 384
+    Height = 23
+    Top = 824
+    Width = 80
+    DataField = 'Payment'
+    DataSource = DataSource2
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 11
+  end
+  object DBGrid3: TDBGrid
+    Left = 776
+    Height = 216
+    Top = 37
+    Width = 264
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Width = 30
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'Название'
+        Width = 100
+        FieldName = 'Name'
+      end    
+      item
+        Title.Caption = 'Оплата'
+        Width = 70
+        FieldName = 'Payment'
+      end>
+    DataSource = DataSource3
+    TabOrder = 13
+  end
+  object GroupBox3: TGroupBox
+    Left = 840
+    Height = 518
+    Top = 432
+    Width = 432
+    Caption = 'Зарплата работников'
+    ClientHeight = 500
+    ClientWidth = 428
+    TabOrder = 15
+    object DBNavigator4: TDBNavigator
+      Left = 8
+      Height = 25
+      Top = 248
+      Width = 241
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 241
+      DataSource = DataSource4
+      Options = []
+      TabOrder = 1
+    end
+    object Button4: TButton
+      Left = 264
+      Height = 25
+      Top = 288
+      Width = 151
+      AutoSize = True
+      Caption = 'Пересчитать зарплаты'
+      OnClick = Button4Click
+      TabOrder = 2
+    end
+    object DBGrid4: TDBGrid
+      Left = 8
+      Height = 224
+      Top = 8
+      Width = 416
+      Color = clWindow
+      Columns = <      
+        item
+          Title.Caption = 'surname'
+          Width = 100
+          FieldName = 'surname'
+        end      
+        item
+          Title.Caption = 'name'
+          Width = 100
+          FieldName = 'name'
+        end      
+        item
+          Title.Caption = 'patronymic'
+          Width = 100
+          FieldName = 'patronymic'
+        end      
+        item
+          Title.Caption = 'Salary'
+          Width = 70
+          FieldName = 'Salary'
+        end>
+      DataSource = DataSource4
+      TabOrder = 0
+    end
+    object GroupBox7: TGroupBox
+      Left = 8
+      Height = 131
+      Top = 280
+      Width = 216
+      Caption = 'Поиск по фамилии'
+      TabOrder = 5
+    end
+    object Edit4: TEdit
+      Left = 24
+      Height = 23
+      Top = 312
+      Width = 80
+      TabOrder = 3
+    end
+    object Button11: TButton
+      Left = 24
+      Height = 25
+      Top = 352
+      Width = 75
+      Caption = 'Поиск'
+      OnClick = Button11Click
+      TabOrder = 4
+    end
+    object Button12: TButton
+      Left = 264
+      Height = 23
+      Top = 336
+      Width = 144
+      Caption = 'Показать все записи'
+      OnClick = Button12Click
+      TabOrder = 6
+    end
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = MySQL50Connection1
+    left = 72
+  end
+  object MySQL55Connection1: TMySQL55Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'kafedra'
+    KeepConnection = False
+    Password = 'root'
+    UserName = 'root'
+    HostName = 'localhost'
+    LogEvents = []
+    left = 608
+    top = 552
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Surname'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'Patronymic'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'AcademicDegree'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Post'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Database = MySQL50Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from `sotrudnik`;'
+    )
+    Params = <>
+    left = 32
+  end
+  object DataSource1: TDatasource
+    DataSet = SQLQuery1
+    left = 112
+  end
+  object DataSource2: TDatasource
+    DataSet = SQLQuery2
+    left = 448
+    top = 896
+  end
+  object SQLQuery2: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'Payment'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = MySQL50Connection1
+    Transaction = SQLTransaction2
+    SQL.Strings = (
+      'select * from `degree`;'
+    )
+    Params = <>
+    left = 384
+    top = 896
+  end
+  object SQLTransaction2: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = MySQL50Connection1
+    left = 312
+    top = 896
+  end
+  object SQLQuery3: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Name'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'Payment'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = MySQL50Connection1
+    Transaction = SQLTransaction3
+    SQL.Strings = (
+      'select * from `post`;'
+    )
+    Params = <>
+    left = 1056
+    top = 360
+  end
+  object SQLTransaction3: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = MySQL50Connection1
+    left = 1136
+    top = 360
+  end
+  object DataSource3: TDatasource
+    DataSet = SQLQuery3
+    left = 1208
+    top = 360
+  end
+  object MySQL50Connection1: TMySQL50Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'kafedra'
+    KeepConnection = False
+    Password = '123456'
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    LogEvents = []
+    left = 704
+    top = 552
+  end
+  object SQLQuery4: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'surname'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'name'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'patronymic'
+        DataType = ftString
+        Precision = -1
+        Size = 45
+      end    
+      item
+        Name = 'Salary'
+        DataType = ftLargeint
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = MySQL50Connection1
+    Transaction = SQLTransaction4
+    SQL.Strings = (
+      'select s.surname, s.name, s.patronymic, d.Payment+p.Payment as "Salary"'
+      'from sotrudnik s'
+      'join degree d on s.academicdegree=d.id'
+      'join post p on s.post=p.id;'
+    )
+    Params = <>
+    left = 1080
+    top = 888
+  end
+  object SQLTransaction4: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = MySQL50Connection1
+    left = 1136
+    top = 888
+  end
+  object DataSource4: TDatasource
+    DataSet = SQLQuery4
+    left = 1192
+    top = 888
+  end
+end
